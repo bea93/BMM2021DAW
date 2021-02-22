@@ -1,0 +1,5 @@
+Options Indexes FollowSymLinks
+AuthType Basic
+AuthName "Acceso restringido"
+AuthUserFile /var/www/html/profesor/.htbeapasswd
+Require user profesor3 profesor2 profesor1

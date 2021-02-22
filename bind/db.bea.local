@@ -1,0 +1,27 @@
+;
+; BIND data file for bea.local
+;
+$TTL	604800
+@	IN	SOA	BMMldap.bea.local. root.localhost. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	BMMldap.bea.local.
+;Registros Host
+@	IN	A	192.168.3.213
+BMMUSED IN	A	192.168.3.213
+BMMldap IN	A	192.168.3.113
+
+;Registros Alias
+daw201	IN	CNAME	BMMUSED.bea.local.
+daw202	IN	CNAME	BMMUSED.bea.local.
+daw213	IN	CNAME	BMMUSED.bea.local.
+daw220	IN	CNAME	BMMUSED.bea.local.	
+
+www.daw201.bea.local.	IN	CNAME	BMMUSED.bea.local.
+www.daw202.bea.local.	IN	CNAME	BMMUSED.bea.local.
+www.daw212.bea.local.	IN	CNAME	BMMUSED.bea.local.
+www.daw220.bea.local.	IN	CNAME	BMMUSED.bea.local.

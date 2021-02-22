@@ -1,0 +1,7 @@
+Options Indexes FollowSymLinks
+AuthType Digest
+AuthName "dominio-ninja"
+AuthDigestProvider file
+AuthUserFile /etc/apache2/digest
+AuthGroupFile /etc/apache2/.htgroup
+Require group grupo1

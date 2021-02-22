@@ -1,0 +1,4 @@
+ErrorDocument 404 /error/error.html
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://192.168.3.213/$1 [R,L]
